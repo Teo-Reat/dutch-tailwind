@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>Some store</title>
+</head>
+<body>
+<header class="header bg-gray-800">
+    <div class="container mx-auto flex justify-between">
+        <div class="logo">
+            <img class="h-52" src="https://superhelten.b-cdn.net/media/logo/stores/1/Super_skjold.png"
+                 alt="Superhelten Legetøj">
+        </div>
+        <div class="navigation w-2/3">
+            <nav class="">
+                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex items-center justify-between h-16">
+                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                            <div class="hidden sm:block sm:ml-6">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Alle produkter</a>
+                                    <a href="#"
+                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Legetøj</a>
+                                    <a href="#"
+                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Samleobjekter & Merchandise</a>
+                                    <a href="#"
+                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Kreativt og skoleting</a>
+                                    <a href="#"
+                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Spil & Samlekort</a>
+                                    <a href="#"
+                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mærker</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="p-8">
+                <div class="bg-white flex items-center rounded-full shadow-xl">
+                    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+                           id="search" type="text" placeholder="Søg">
+
+                    <div class="p-4">
+                        <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+                            Søg
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts flex flex-col px-4 py-2 mt-6 block w-1/6">
+            <div class="address text-white">Nordre Frihavnsgade 25, 2100 København Ø, Dansk</div>
+            <div class="phone text-white text-2xl mt-4">+4539393055</div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container mx-auto">
+        <section class="catalog flex flex-wrap my-32">
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/h/e/heli_1.jpg"
+                             alt="A.R.M.Y militær helikopter">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        A.R.M.Y militær helikopter
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        149,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/2/1/21394.jpg"
+                             alt="Svæveflyver i skum på 15 cm">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Svæveflyver i skum på 15 cm
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        149,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/f/l/fly_3.jpg"
+                             alt="Stor militær jet på 37 cm med lyd og lys">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Stor militær jet på 37 cm med lyd og lys
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        99,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/4/3/43693z.jpg"
+                             alt="Svæveflyver i skum på 15 cm">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Svæveflyver i skum på 15 cm
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        14,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/1/5/15898a.jpg"
+                             alt="Militær fartøjer med pullback 5-pak">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Militær fartøjer med pullback 5-pak
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        69,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/4/b/4b417c613c8d32b6a67a6612b4ea60bc2bccda62.jpg"
+                             alt="Army jet på 26 cm med lys og lyd">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Army jet på 26 cm med lys og lyd
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        99,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/2/6/26012a.jpg"
+                             alt="Mini metal fly 8-pak">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Mini metal fly 8-pak
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        79,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/1/2/12052a.jpg"
+                             alt="Space shuttle med lyd og lys og pullback">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Space shuttle med lyd og lys og pullback
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        149,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/2/1/21394.jpg"
+                             alt="Svæveflyver i skum på 15 cm">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Svæveflyver i skum på 15 cm
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        149,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/f/l/fly_3.jpg"
+                             alt="Stor militær jet på 37 cm med lyd og lys">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Stor militær jet på 37 cm med lyd og lys
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        99,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__item w-1/6 px-4 py-4">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col flex flex-col">
+                    <a class="catalog__item-image" href="#">
+                        <img class="w-full"
+                             src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/4/3/43693z.jpg"
+                             alt="Svæveflyver i skum på 15 cm">
+                    </a>
+                    <a class="catalog__item-title text-center my-4 block" href="#">
+                        Svæveflyver i skum på 15 cm
+                    </a>
+                    <div class="catalog__item-price text-center font-bold text-gray-600 text-2xl mt-auto">
+                        14,95 DKK
+                    </div>
+                    <button class="catalog__item-button px-8 py-2 block bg-gray-300 rounded-full mx-auto my-4 group-hover:bg-blue-800 group-hover:text-white"
+                            type="button">
+                        Tilføj kurv
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>
