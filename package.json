@@ -11,14 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "autoprefixer": "^10.0.2",
     "cssnano": "^4.1.10",
-    "jquery": "^3.5.1",
     "live-server": "^1.2.1",
     "onchange": "^7.1.0",
     "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
-    "slick-carousel": "^1.8.1",
     "tailwindcss": "^2.0.1"
   }
 }

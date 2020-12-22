@@ -3,67 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/tailwind.css">
     <title>Some store</title>
 </head>
-<body>
+<body class="bg-gray-50">
 <header class="header bg-gray-800">
-    <div class="container mx-auto flex justify-between">
-        <div class="logo">
-            <img class="h-52" src="https://superhelten.b-cdn.net/media/logo/stores/1/Super_skjold.png"
-                 alt="Superhelten Legetøj">
-        </div>
-        <div class="navigation w-2/3">
-            <nav class="">
-                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                    <div class="relative flex items-center justify-between h-16">
-                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                            <div class="hidden sm:block sm:ml-6">
-                                <div class="flex space-x-4">
-                                    <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Alle produkter</a>
-                                    <a href="#"
-                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Legetøj</a>
-                                    <a href="#"
-                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Samleobjekter & Merchandise</a>
-                                    <a href="#"
-                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Kreativt og skoleting</a>
-                                    <a href="#"
-                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Spil & Samlekort</a>
-                                    <a href="#"
-                                       class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mærker</a>
+    <div class="container mx-auto">
+        <div class="header__inner px-4 flex justify-between">
+            <a class="logo block" href="#">
+                <img class="h-52" src="https://superhelten.b-cdn.net/media/logo/stores/1/Super_skjold.png"
+                     alt="Superhelten Legetøj">
+            </a>
+
+            <div class="navigation w-2/3">
+                <nav class="">
+                    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                        <div class="relative flex items-center justify-between h-16">
+                            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                                <div class="hidden sm:block sm:ml-6">
+                                    <div class="flex space-x-4">
+                                        <a href="#"
+                                           class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Alle
+                                            produkter</a>
+                                        <a href="#"
+                                           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Legetøj</a>
+                                        <a href="#"
+                                           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Samleobjekter
+                                            & Merchandise</a>
+                                        <a href="#"
+                                           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Kreativt
+                                            og skoleting</a>
+                                        <a href="#"
+                                           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Spil
+                                            & Samlekort</a>
+                                        <a href="#"
+                                           class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mærker</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
-            <div class="p-8">
-                <div class="bg-white flex items-center rounded-full shadow-xl">
-                    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
-                           id="search" type="text" placeholder="Søg">
+                <div class="p-8">
+                    <div class="bg-white flex items-center rounded-full shadow-xl">
+                        <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+                               id="search" type="text" placeholder="Søg">
 
-                    <div class="p-4">
-                        <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
-                            Søg
-                        </button>
+                        <div class="p-4">
+                            <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+                                Søg
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="contacts flex flex-col px-4 py-2 mt-6 block w-1/6">
-            <div class="address text-white">Nordre Frihavnsgade 25, 2100 København Ø, Dansk</div>
-            <div class="phone text-white text-2xl mt-4">+4539393055</div>
+            <div class="contacts flex flex-col px-4 py-2 mt-6 block w-1/6">
+                <div class="address text-white">Nordre Frihavnsgade 25, 2100 København Ø, Dansk</div>
+                <div class="phone text-white text-2xl mt-4">+4539393055</div>
+            </div>
         </div>
     </div>
 </header>
 
 <main class="main">
     <div class="container mx-auto">
-        <section class="catalog flex flex-wrap my-32">
+        <section class="banner px-4 my-8">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide flex rounded bg-gradient-to-r from-green-500 via-green-400 to-blue-500 w-full overflow-hidden">
+                            <div class="splide__slide-image w-1/2">
+                                <img class="object-cover h-full w-full"
+                                     src="https://superhelten.b-cdn.net/media/catalog/product/cache/6849a63b29bfc046f3b8104d888b5145/g/a/gavekort-til-superhelten.gif"
+                                     alt="Superhelten Gavekort">
+                            </div>
+                            <div class="splide__slide-text">
+                                <h2 class="splide__slide-title text-white text-6xl mt-56 ml-6">Gavekort</h2>
+                                <div class="splide__slide-description text-white text-xl mt-4 mx-16">
+                                    Valgfrit beløb - kan bruges i butik og i webshop
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide flex rounded bg-gradient-to-r from-red-500 via-pink-400 to-purple-500 w-full overflow-hidden">
+                            <div class="splide__slide-image w-1/2">
+                                <img class="object-cover h-full w-full"
+                                     src="https://superhelten.b-cdn.net/media/wysiwyg/homeblock-byt2.png"
+                                     alt="initial loading">
+                            </div>
+                            <div class="splide__slide-text">
+                                <h2 class="splide__slide-title text-white text-6xl mt-56 ml-6">Vi bytter i 365 dage</h2>
+                                <div class="splide__slide-description text-white text-xl mt-4 mx-16">
+                                    Køb trygt gaverne allerede nu
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide flex rounded bg-gradient-to-r from-gray-500 via-white to-yellow-500 w-full overflow-hidden">
+                            <div class="splide__slide-image w-1/2">
+                                <img class="object-cover h-full w-full"
+                                     src="https://superhelten.b-cdn.net/media/catalog/product/cache/7356ecfb0a185a189d676f4a79b6c1c8/x/_/x_tot-gzus104.jpg"
+                                     alt="Superhelten Gavekort">
+                            </div>
+                            <div class="splide__slide-text">
+                                <h2 class="splide__slide-title text-6xl mt-56 ml-6">Gavekort trygt gaverne</h2>
+                                <div class="splide__slide-description text-xl mt-4 mx-16">
+                                    Valgfrit beløb - kan bruges i butik og i webshop allerede nu
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog flex flex-wrap my-8">
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/h/e/heli_1.jpg"
@@ -82,7 +139,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/2/1/21394.jpg"
@@ -101,7 +158,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/f/l/fly_3.jpg"
@@ -120,7 +177,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/4/3/43693z.jpg"
@@ -139,7 +196,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/1/5/15898a.jpg"
@@ -158,7 +215,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/4/b/4b417c613c8d32b6a67a6612b4ea60bc2bccda62.jpg"
@@ -177,7 +234,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/2/6/26012a.jpg"
@@ -196,7 +253,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/1/2/12052a.jpg"
@@ -215,7 +272,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/2/1/21394.jpg"
@@ -234,7 +291,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/f/l/fly_3.jpg"
@@ -253,7 +310,7 @@
                 </div>
             </div>
             <div class="catalog__item w-1/6 px-4 py-4">
-                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col flex flex-col">
+                <div class="catalog__item-inner group px-4 py-2 border border-gray-400 hover:border-blue-600 hover:shadow-2xl rounded h-full flex flex-col bg-white flex flex-col">
                     <a class="catalog__item-image" href="#">
                         <img class="w-full"
                              src="https://superhelten.b-cdn.net/media/catalog/product/cache/42985200b11dbe76846da2ec57450b31/4/3/43693z.jpg"
@@ -272,7 +329,110 @@
                 </div>
             </div>
         </section>
+
+        <section class="text px-4 my-8">
+            <h2 class="text__title text-2xl mt-6 mb-2">
+                Stort udvalg af legetøj og merchandise
+            </h2>
+            <p class="text__article">
+                Vi ved, at alle vores kunder er unikke og har specifikke, individuelle behov. Derfor stiler vi altid
+                efter at have flere forskellige typer af legetøj og merchandise fra de mest populære mærker. På denne
+                måde behøver du kun lede ét sted for at finde unikke produkter til enhver lejlighed. Klik f.eks. på
+                ”Baby og Småbørnslegetøj” under ”produkttype”, hvis du mangler en gave til din venindes babyshower.
+                Eller vælg ”Frost / Frozen” under ”Licens” for finde den perfekte Anna eller Elsa kjole. Vi har masser
+                af spændende kvalitetsprodukter fra producenter som LEGO, Hasbro og Ravensburger. Vi elsker nemlig
+                legetøj i alle afskygninger og på vores lager findes alt fra minifigurer til kæmpebamser. Du finder
+                desuden masser af samleobjekter, som du kan vise frem for vennerne. Vi får hele tiden nye varer på
+                hylderne, der markeres med ”Nyhed”, så du eller dit barn kan være den første i klassen til at få det
+                nyeste legetøj eller merchandise her hos os.
+            </p>
+            <h2 class="text__title text-2xl mt-6 mb-2">
+                Slip kreativiteten løs
+            </h2>
+            <p class="text__article">
+                Når vi leger, får fantasien frit løb, og kreativiteten blomstrer. Vi har netop det, der skal til, for at
+                sætte gang i den gode leg. F.eks. har vi lageret fyldt med udklædninger, der kan få dig til føle som en
+                stor og stærk superhelt eller en smuk og yndefuld prinsesse. Vores flotte kostumer tager selvfølgelig
+                også kegler til fastelavn, halloween eller andre udklædningsfester. Legen skal heller ikke gå i stå i de
+                mørke efterårsmåneder og på lange vinteraftener. Her kan du med vores seje modelbiler køre om kap med
+                vennerne på gulvet eller tæve skurke med actionfigurer fra vores store udvalg. Derudover har vi masser
+                af brætspil, som familien kan samles over, eller du kan udfolde dig kreativt i en af vores mange
+                malebøger. Og er du for alvor i det kreative hjørne, kan du forsøge dig med et kreativt sæt og f.eks.
+                give dig i kast med make-up, trylleri eller videnskab. Hos Superhelten Legetøj er det dermed kun
+                fantasien, der sætter grænser.
+            </p>
+        </section>
+    </div>
+    <div class="mail bg-gray-500">
+        <div class="container mx-auto">
+            <div class="py-8 px-4 flex items-center bg-gray-500">
+                <div class="email__description text-white">
+                    TILMELD DIG VORES NYHEDSBREV
+                </div>
+                <div class="bg-white flex items-center rounded-full shadow-xl ml-6 w-1/3">
+                    <input class="rounded-l-full w-full h-12 py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+                           id="mail" type="text" placeholder="Indtast din mail adresse">
+                </div>
+                <button class="bg-blue-500 text-white rounded-r-full p-4 pr-6 hover:bg-blue-400 focus:outline-none w-auto h-12 flex items-center justify-center">
+                    Tilmeld
+                </button>
+            </div>
+        </div>
     </div>
 </main>
+<footer class="footer bg-gray-800">
+    <div class="container mx-auto">
+        <div class="footer__inner mx-4 py-6 text-white flex">
+            <ul class="contacts__list">
+                <li class="contacts__item my-4">
+                    <a class="contacts__link hover:text-blue-200" href="#">Kontakt Os</a>
+                </li>
+                <li class="contacts__item my-4">
+                    <a class="contacts__link hover:text-blue-200" href="#">Handelsvilkår</a>
+                </li>
+                <li class="contacts__item my-4">
+                    <a class="contacts__link hover:text-blue-200" href="#">Privatlivspolitik</a>
+                </li>
+                <li class="contacts__item my-4">
+                    <a class="contacts__link hover:text-blue-200" href="#">Sikker handel</a>
+                </li>
+            </ul>
+            <div class="footer__address flex px-4 ml-8">
+                <div class="footer__address-item w-64 p-4">
+                    <div class="footer__address-image-wrapper">
+                        <img src="https://superhelten.b-cdn.net/media/wysiwyg/Superhelten-_sterbro.jpg"
+                             alt="shop"
+                             class="footer__address-image">
+                    </div>
+                    <div class="footer__address-description my-4">
+                        Superhelten Legetøj Østerbro
+                        Ndr. Frihavnsgade 25
+                        2100 København Ø
+                    </div>
+                    <a class="footer__address-administrator hover:text-blue-200" href="#">Info og åbningstider</a>
+                </div>
+                <div class="footer__address-item w-64 p-4 ml-4">
+                    <div class="footer__address-image-wrapper">
+                        <img src="https://superhelten.b-cdn.net/media/wysiwyg/Superhelten-frederiksberg.jpg"
+                             alt="shop"
+                             class="footer__address-image">
+                    </div>
+                    <div class="footer__address-description my-4">
+                        Superhelten Legetøj Frederiksberg
+                        H.C. Ørsteds Vej 32
+                        1879 Frederiksberg
+                    </div>
+                    <a class="footer__address-administrator hover:text-blue-200" href="#">Info og åbningstider</a>
+                </div>
+            </div>
+            <a class="footer__logo ml-auto block" href="#">
+                <img class="h-52" src="https://superhelten.b-cdn.net/media/logo/stores/1/Super_skjold.png"
+                     alt="Superhelten Legetøj">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="js/splide.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
